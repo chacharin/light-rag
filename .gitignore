@@ -53,10 +53,10 @@ local_neo4jWorkDir/
 neo4jWorkDir/
 
 # Data & Storage
-inputs/
+#inputs/
 output/
-rag_storage/
-data/
+#rag_storage/
+#data/
 
 # User cumstomized prompt directory
 prompts/entity_type/

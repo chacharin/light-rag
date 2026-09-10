@@ -1,0 +1,16 @@
+FROM ghcr.io/hkuds/lightrag:latest
+
+ENV PATH=/app/.venv/bin:/root/.local/bin:$PATH
+
+COPY data/rag_storage /app/data/rag_storage
+COPY data/inputs /app/data/inputs
+
+RUN mkdir -p /app/data/prompts
+
+ENV WORKING_DIR=/app/data/rag_storage
+ENV INPUT_DIR=/app/data/inputs
+ENV PROMPT_DIR=/app/data/prompts
+
+EXPOSE 8080
+
+CMD ["/app/.venv/bin/python", "-m", "lightrag.api.lightrag_server"]

@@ -28,12 +28,12 @@ Makefile
 # Exclude other projects
 /tests
 /scripts
-/data
+#/data
 /dickens
 /reproduce
 /output_complete
-/rag_storage
-/inputs
+#/rag_storage
+#/inputs
 
 # Python version manager file
 .python-version
