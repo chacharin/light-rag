@@ -1,4 +1,4 @@
-#การตั้งค่าก่อน Deploy
+# การตั้งค่าก่อน Deploy
 
 LLM_BINDING=openai
 
